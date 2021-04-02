@@ -1,0 +1,30 @@
+$margin: 5px;
+
+a{
+    color: #6c757d!important;
+}
+
+ul.links {
+    margin:$margin 0;
+    font-size:.85em;
+}
+
+li.inline {
+    display: inline-block;
+}
+
+li.menu-item-left {
+    margin-right: $margin;
+}
+
+li.menu-item-middle {
+    margin: 0 $margin;
+}
+
+li.menu-item-right {
+    margin-left: $margin;
+}
+
+hr {
+    margin: $margin 0;
+}

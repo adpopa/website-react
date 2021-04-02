@@ -1,0 +1,72 @@
+.table>tbody>tr>td, .table>tfoot>tr>td{
+    vertical-align: middle;
+}
+
+.th-product {
+	width: 40%
+}
+
+.th-price {
+	width: 8%
+}
+
+.th-quantity {
+	width: 22%
+}
+
+.th-Subtotal {
+	width: 20%
+}
+
+.th-btns {
+	width: 12%
+}
+
+.image {
+	max-height: 60px; 
+	max-width: 60px;
+}
+
+.link-black {
+	color: black !important;
+}
+
+.btn-left {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+    table#cart tbody td .form-control{
+		display: inline !important;
+	}
+	.hidden-xs {
+		display: none;
+	}
+
+	/* .link-black {
+		color: white !important;
+	} */
+	.actions .btn{
+		width:36%;
+		margin:1.5em 0;
+	}
+	
+	.actions .btn-info{
+		float:left;
+	}
+	.actions .btn-danger{
+		float:right;
+	}
+	
+	#cart thead { display: none; }
+	#cart tbody td { display: block; padding: .6rem; min-width:320px;}
+	/* #cart tbody tr td:first-child { background: #333; color: #fff; } */
+	#cart tbody td:before {
+		content: attr(data-th); font-weight: bold;
+		display: inline-block; width: 8rem;
+	}
+	
+	#cart tfoot td{display:block; }
+	#cart tfoot td .btn{display:block;}
+	
+}
